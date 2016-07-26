@@ -3,6 +3,20 @@ mood: happy
 published: true
 layout: default
 ---
+<div class="posts">
+  {% for post in site.posts %}
+  
+	  {% if post.mood == 'happy' %}
+    <article class="post">
 
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-test test test
+      <div class="entry">
+        {{ post.mood }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+	  {% endif %}
+  {% endfor %}
+</div>
