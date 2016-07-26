@@ -1,5 +1,5 @@
 ---
 published: false
-layout: default2
+layout: posts
 ---
 this is to make sure everything works
