@@ -1,4 +1,6 @@
 <style>
+  
+  body {font-style: helvetica;}
 	.half {
 		width: 50%;
 		float: left;
@@ -31,6 +33,7 @@
 	}
 </style>
 
+<body>
 <article class="post">
 	<div class="half half-left">
 		<h1>{{ page.title }}</h1>
@@ -43,7 +46,8 @@
 	    {{ content }}
 	  </div>
 	</div>
-	<p class="example">This is the example post type</p>
+	<p class="example"></p>
 
   {% include disqus.html %}
 </article>
+</body>
