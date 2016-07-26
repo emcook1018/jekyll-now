@@ -1,57 +1,4 @@
-<style>
-  
-  body {
-    	margin: 10%;
-      	font-family: "helvetica", sans-serif;
-  		}
-  
-  ul {
-      	display: inline;
-      	list-style-type: none;
-      	background-color: #ff9933;
-  		}
-  li {
-    	display: inline;
-   		padding: 5px;
-    	text-align: center;
-    	color: #006699;
-    	background-color: #ff9933;
-  	}
-    
- 
-	.half {
-		width: 40%;
-		float: left;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-	.half-left {
-		background-color:#006699;
-		padding: 20px;
-	}
-	.half-left .date {
-		color: #fff;
-	}
-	.half-left h1 {
-		margin: 0;
-		line-height: 1.2;
-		color: #ff9933;
-	}
-	.half-right {
-		padding: 20px;
-	}
-	.half-right p:first-child {
-      	color: #006699;
-		margin-top: 0;
-  
-  }
-	.example {
-		color: #aaa;
-		text-align: center;
-		font-style: italic;
-	}
-</style>
+
 
 <body>
  <div id="ul">
@@ -66,6 +13,10 @@
 		<h1>{{ page.title }}</h1>
 	  <div class="date">
 	    Written on {{ page.date | date: "%B %e, %Y" }}
+        
+        {% if post.mood == 'happy' %}
+        :)
+        
 	  </div>
 	</div>
   
