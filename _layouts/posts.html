@@ -1,18 +1,19 @@
 <style>
+  
+  body {margin: 10%;
+      	font-style: "helvetica", sans-serif;
+  		}
+  
   ul {display: inline;
       list-style-type: none;
       background-color: tomato;
       width: 50%;
   		}
   li {display: inline;
-  
-  
   	}
-  	
-  body {margin: 10%;
-      		font-style: "helvetica", sans-serif;}
   
-  	
+  container {background-color: blue;}
+  
   
 	.half {
       	{font-style: "helvetica";}
@@ -54,6 +55,8 @@
    <li>about</li>
     <li>blog</li>
  </div>
+
+<container>
 <article class="post">
 	<div class="half half-left">
 		<h1>{{ page.title }}</h1>
@@ -70,4 +73,5 @@
 
   {% include disqus.html %}
 </article>
+</container>
 </body>
