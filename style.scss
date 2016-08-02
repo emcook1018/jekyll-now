@@ -157,7 +157,7 @@ nav {
   float: left;
   font-family: $helveticaNeue;
   font-size: 18px;
-
+}
   @include mobile {
     float: none;
     margin-top: 9px;
@@ -183,7 +183,7 @@ nav {
   img {
     border-radius: 5px;
   }
-}
+
 
 .site-info {
   float: right;
