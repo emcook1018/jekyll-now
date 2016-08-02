@@ -153,10 +153,6 @@ img {
 .wrapper-masthead {
   margin-bottom: 50px;
 }
-nav {
-  float: left;
-  font-family: $helveticaNeue;
-  font-size: 18px;
 
   @include mobile {
     float: none;
@@ -215,6 +211,10 @@ nav {
   }
 }
 
+nav {
+  float: left;
+  font-family: $helveticaNeue;
+  font-size: 18px;
 
 
   a {
